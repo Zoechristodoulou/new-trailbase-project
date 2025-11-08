@@ -1,7 +1,5 @@
 import { Create, Datagrid, Edit, EditButton, List, Show, SimpleForm, SimpleShowLayout, TextField, TextInput } from "react-admin";
 
-
-
 export const users_list = () => {
     
     const users_filter = [
@@ -10,9 +8,9 @@ export const users_list = () => {
    return (
     <List filters={users_filter}>
         <Datagrid>
-            <TextField source="name" />
-            <TextField source="username" />
-            <TextField source="email" />
+            <TextField source="Username" />
+            <TextField source="UserEmail" />
+            <TextField source="UserPWord" />
             <EditButton/>
         </Datagrid>
     </List>
@@ -22,9 +20,9 @@ export const users_list = () => {
 export const users_show = () => (
     <Show>
         <SimpleShowLayout>
-            <TextField source="name" />
-            <TextField source="username" />
-            <TextField source="email" />
+            <TextField source="Username" />
+            <TextField source="UserEmail" />
+            <TextField source="UserPWord" />
         </SimpleShowLayout>
     </Show>
 )
@@ -32,9 +30,9 @@ export const users_show = () => (
 export const users_edit = () => (
     <Edit>
         <SimpleForm>
-            <TextInput source="name"/>
-            <TextInput source="username" />
-            <TextInput source="email" />
+            <TextInput source="Username"/>
+            <TextInput source="UserEmail" />
+            <TextInput source="UserPWord" />
         </SimpleForm>
     </Edit>
 )
@@ -42,9 +40,9 @@ export const users_edit = () => (
 export const users_create = () => (
     <Create>
         <SimpleForm>
-            <TextInput source="name"/>
-            <TextInput source="username" />
-            <TextInput source="email" />
+            <TextInput source="Username"/>
+            <TextInput source="UserEmail" />
+            <TextInput source="UserPWord" />
         </SimpleForm>
     </Create>
 )
